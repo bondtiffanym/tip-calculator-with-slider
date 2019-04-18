@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tip Calculator</title>
+    </head>
+<body>
+    <div class="container-fluid">
+    
+        <!-- Contains whole calculator -->
+        <div class="container card">
+          <div class="card-title">
+           <h4 style="text-align: center; font-weight: bold; font-size: 30px;">Tip Calculator</h4><hr style="width: 90%;">
+          </div>
+          <div class="card-body">
+          
+          <!-- Bill Amount -->
+          
+    <div class="input-group input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Bill Amount $</span>
+      </div>
+      <input type="text" class="form-control" id="bill-amount" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="0.00">
+    </div>
+          <!-- Tip Slider -->
+       <div class="slidecontainer">
+         <span class="badge">Tip %</span>
+      <input type="range" min="0" max="50" value="20" class="slider" id="myRange" step="1">
+           <span class="badge" id="demo"></span>
+    </div>
+            
+         <!-- Tip and Total Spaces --> 
+       <div class="row" style="margin-top: 5px;">
+         <div class="col-sm-6">
+           <div class="form-control" id="tip">Tip: 
+              </div>
+            </div>
+            
+            <div class="col-sm-6">
+              <div class="form-control" id="total">
+                Total: 
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Closes calculator container -->
+          </div>
+        </div>
+    
+        <!-- Closes fluid body container -->
+      </div>
+</body>
+</html>
