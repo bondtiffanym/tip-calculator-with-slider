@@ -13,48 +13,46 @@
 <body>
     <div class="container-fluid">
     
-        <!-- Contains whole calculator -->
-        <div class="container card">
-          <div class="card-title">
-           <h4 style="text-align: center; font-weight: bold; font-size: 30px;">Tip Calculator</h4><hr style="width: 90%;">
-          </div>
-          <div class="card-body">
-          
-          <!-- Bill Amount -->
-          
-    <div class="input-group input-group-lg">
-      <div class="input-group-prepend">
-        <span class="input-group-text">Bill Amount $</span>
+    <!-- Contains whole calculator -->
+    <div class="container card p-3">
+      <div class="card-title">
+       <h2 class="text-center font-weight-bold">Tip Calculator</h2><hr class="w-75">
       </div>
-      <input type="text" class="form-control" id="bill-amount" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="0.00">
-    </div>
-          <!-- Tip Slider -->
-       <div class="slidecontainer">
-         <span class="badge">Tip %</span>
-      <input type="range" min="0" max="50" value="20" class="slider" id="myRange" step="1">
-           <span class="badge" id="demo"></span>
-    </div>
-            
-         <!-- Tip and Total Spaces --> 
-       <div class="row" style="margin-top: 5px;">
-         <div class="col-sm-6">
-           <div class="form-control" id="tip">Tip: 
-              </div>
-            </div>
-            
-            <div class="col-sm-6">
-              <div class="form-control" id="total">
-                Total: 
-              </div>
-            </div>
-            
-          </div>
-          
-          <!-- Closes calculator container -->
-          </div>
-        </div>
-    
-        <!-- Closes fluid body container -->
+      <div class="card-body">
+      
+      <!-- Bill Amount -->
+ <div class="row mx-auto">     
+<div class="input-group input-group-lg col-12">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Bill Amount $</span>
+  </div>
+  <input type="text" class="form-control" id="bill-amount" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="0.00">
+</div>
+      <!-- Tip Slider -->
+     <span class="badge col-2 ml-3 my-2">Tip %</span>
+  <input type="range" min="0" max="50" value="20" class="slider col-6 mt-3 mb-1 mx-auto" id="myRange" step="1">
+       <span class="badge col-2 my-2 mr-3" id="demo"></span>
+</div>
+
+        
+     <!-- Tip and Total Spaces --> 
+      <div class="form-group row justify-content-between mx-auto px-3">
+       <span class="form-control col-12 col-md-5 my-2" id="tip">Tip: 
+          </span>
+        
+        
+          <span class="form-control col-12 col-md-5 my-2" id="total">
+            Total: 
+          </span>
+        
+        
       </div>
+      
+      <!-- Closes calculator container -->
+      </div>
+    </div>
+
+    <!-- Closes fluid body container -->
+  </div>
 </body>
 </html>
